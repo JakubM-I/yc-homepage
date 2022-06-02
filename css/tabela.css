@@ -1,0 +1,36 @@
+.onlineBuyerTable{
+    overflow: auto visible;
+}
+
+.onlineBuyer__tableTitle{
+    caption-side: bottom;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.onlineBuyer{
+    max-width: 100%;
+    width: 800px;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.onlineBuyer__tableCell{
+    padding: 12px 15px;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.onlineBuyer__tableCell--empty{
+    border: none;
+}
+
+.onlineBuyer__colHead, .onlineBuyer__rowHead{
+    background-color: hsl(0, 2%, 97%);
+}
+
+.onlineBuyer__rowSummary{
+    background-color: rgb(248, 223, 228);
+}
