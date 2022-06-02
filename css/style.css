@@ -141,19 +141,19 @@ p.paragraph-text::before{
 }
 
 .text1::before{
-    background-image: url(/picture/internet-icon.png);
+    background-image: url(../picture/internet-icon.png);
 }
 
 .text1.blackStyle::before{
-    background-image: url(/picture/internet-icon-white.png);
+    background-image: url(../picture/internet-icon-white.png);
 }
 
 .text2::before{
-    background-image: url(/picture/programming-icon.png);
+    background-image: url(../picture/programming-icon.png);
 }
 
 .text2.blackStyle::before{
-    background-image: url(/picture/programming-icon-white.png);
+    background-image: url(../picture/programming-icon-white.png);
 }
 
 
