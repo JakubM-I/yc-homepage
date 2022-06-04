@@ -55,7 +55,7 @@ h2{
     list-style: none;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
-    background-color: #ffffff54;
+    /* background-color: #ffffff54; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -69,19 +69,15 @@ h2{
 
 }
 
-.menu__item a{
+.menu__link{
     text-decoration: none;
     padding: 10px 15px;
     color: #2b2b2b;
 }
 
-
-.menu__item a:hover{
+.menu__link:hover{
     background-color: #bdbdbd54;
 }
-
-
-
 
 .header{
     width: 90%;
@@ -104,15 +100,11 @@ h2{
     line-height: 1.5em;
 }
 
-
-
 .main{
     margin: 0 auto;
     width: 80%;
     position: relative;
 }
-
-
 
 .paragraph{
     margin-bottom: 20px;
@@ -166,6 +158,11 @@ p.paragraph-text::before{
 .blackStyle{
     color: #fff;
     background-color: #000;
+}
+
+.menu.blackStyle{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .topReturn{
