@@ -37,7 +37,6 @@ h2{
     color: #fff;
 }
 
-
 .headerTop{
     width: 100%;
     margin-bottom: 20px;
@@ -45,18 +44,16 @@ h2{
     text-align: right;
 }
 
-
 .headerTop p{
     font-size: 14px;
 }
-
 
 .menu{
     list-style: none;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
-    /* background-color: #ffffff54; */
     width: 100%;
+    padding: 0;
     display: flex;
     justify-content: center;
 }
@@ -66,7 +63,6 @@ h2{
     text-align: center;
     padding: 10px 15px;
     margin-right: 10px;
-
 }
 
 .menu__link{
