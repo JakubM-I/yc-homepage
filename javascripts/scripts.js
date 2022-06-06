@@ -20,7 +20,7 @@ change.addEventListener("click", () => {
     footer.classList.toggle("blackStyle");
     web.classList.toggle("blackStyle");
     code.classList.toggle("blackStyle");
-    menu.classList.toggle("blackStyle");
+
     menuLink.forEach((l) => {
         l.classList.toggle("blackStyle");
     })
@@ -36,5 +36,5 @@ change.addEventListener("click", () => {
     //         } else {
     //         change.innerText = "Ciemny";
     //     }
-    change.innerText = page.classList.contains("blackStyle") ? "Jasny" : "Ciemny";
+    change.innerText = page.classList.contains("blackStyle") ? "Jasny motyw" : "Ciemny motyw";
 })

@@ -25,11 +25,11 @@ h2{
 }
 
 .button{
-    padding: 5px 15px;
-    background-color: #fff;
+    padding: 10px 15px;
+    background-color: rgb(204, 200, 200);
     color: #000;
-    border-radius: 20px;
-    border: 1px solid #000;
+    border-radius: 5px;
+    border: none;
 }
 
 .button:hover{
@@ -40,22 +40,62 @@ h2{
 .headerTop{
     width: 100%;
     margin-bottom: 20px;
-    padding-right: 20px;
+    /* padding-right: 20px; */
     text-align: right;
 }
 
-.headerTop p{
-    font-size: 14px;
+.header{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("/picture/header-background-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__picture{
+    max-width: 350px;
+    width: 100%;
+    padding: 5px;
+}
+
+.header_img{
+    width: 100%;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.header__title{
+    max-width: 500px;
+    width: 100%;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.header__h1{
+    font-size: 53px;
+    line-height: 1.2em;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.header__subtitle{
+    font-size: 23px;
 }
 
 .menu{
     list-style: none;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    /* border-top: 1px solid #000;
+    border-bottom: 1px solid #000; */
+    margin-bottom: 0px;
     width: 100%;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    align-items: center;
 }
 
 .menu__item{
@@ -69,32 +109,21 @@ h2{
     text-decoration: none;
     padding: 10px 15px;
     color: #2b2b2b;
+    border-radius: 5px;
 }
 
 .menu__link:hover{
     background-color: #bdbdbd54;
 }
 
-.header{
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #d3d3d3;
+.header__line{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #c0bfbf;
+    box-shadow: 1px 1px 3px 1px #c0bfbf;
+
 }
 
-.header__picture{
-    padding: 5px;
-}
-
-.header__title{
-    padding: 0 10px;
-}
-
-.header__title h1{
-    line-height: 1.5em;
-}
 
 .main{
     margin: 0 auto;
@@ -154,11 +183,6 @@ p.paragraph-text::before{
 .blackStyle{
     color: #fff;
     background-color: #000;
-}
-
-.menu.blackStyle{
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
 }
 
 .topReturn{
