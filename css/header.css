@@ -50,7 +50,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url("../picture/header-background-2.jpg");
+    background-image: url(../picture/header-background-2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
