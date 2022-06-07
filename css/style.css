@@ -1,7 +1,5 @@
 html{
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.35em;
 }
 
 *, ::after, ::before{
@@ -11,6 +9,8 @@ html{
 .body{
     max-width: 1200px;
     margin: 15px auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.35em;
 }
 
 
@@ -23,107 +23,6 @@ h2{
     font-size: 22px;
     margin-bottom: 10px;
 }
-
-.button{
-    padding: 10px 15px;
-    background-color: rgb(204, 200, 200);
-    color: #000;
-    border-radius: 5px;
-    border: none;
-}
-
-.button:hover{
-    background-color: rgba(159, 159, 159, 0.885);
-    color: #fff;
-}
-
-.headerTop{
-    width: 100%;
-    margin-bottom: 20px;
-    /* padding-right: 20px; */
-    text-align: right;
-}
-
-.header{
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-image: url("/picture/header-background-2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.header__picture{
-    max-width: 350px;
-    width: 100%;
-    padding: 5px;
-}
-
-.header_img{
-    width: 100%;
-    padding: 15px;
-    border-radius: 50%;
-}
-
-.header__title{
-    max-width: 500px;
-    width: 100%;
-    padding: 0 10px;
-    color: #fff;
-}
-
-.header__h1{
-    font-size: 53px;
-    line-height: 1.2em;
-    margin-top: 0px;
-    margin-bottom: 5px;
-}
-
-.header__subtitle{
-    font-size: 23px;
-}
-
-.menu{
-    list-style: none;
-    /* border-top: 1px solid #000;
-    border-bottom: 1px solid #000; */
-    margin-bottom: 0px;
-    width: 100%;
-    padding: 0;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-.menu__item{
-    display: block;
-    text-align: center;
-    padding: 10px 15px;
-    margin-right: 10px;
-}
-
-.menu__link{
-    text-decoration: none;
-    padding: 10px 15px;
-    color: #2b2b2b;
-    border-radius: 5px;
-}
-
-.menu__link:hover{
-    background-color: #bdbdbd54;
-}
-
-.header__line{
-    display: block;
-    width: 100%;
-    border-bottom: 1px solid #c0bfbf;
-    box-shadow: 1px 1px 3px 1px #c0bfbf;
-
-}
-
 
 .main{
     margin: 0 auto;
@@ -202,19 +101,6 @@ p.paragraph-text::before{
 
 .topReurn__link:hover{
         opacity: 0.5;
-}
-
-@media screen and (max-width: 1020px) {
-    .header{
-        flex-direction: column-reverse;
-        width: 95%;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .header__picture img{
-        max-width: 100%;
-    }
 }
 
 @media screen and (max-width: 1020px) {
