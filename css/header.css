@@ -1,6 +1,6 @@
 .navigation{
     list-style: none;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     width: 100%;
     padding: 0;
     display: flex;
@@ -23,12 +23,44 @@
     border-radius: 5px;
 }
 
+.navigation__link--black{
+    color: #fff;
+}
+
 .navigation__link:hover{
     background-color: #bdbdbd54;
 }
+/* Drop down menu on mobile device */
+.mobileMenu{
+    border: 1px solid #000;
+    position: relative;
+}
 
+.mobileMenu__list{
+    list-style: none;
+    border: none;
+    width: 100%;
+    position: absolute;
+    top: -17px;
+    right: 0px;
+    background: #fff;
+    text-align: center;
+    padding-left: 0;
+}
 
-.button{
+.navigation__item--mobile{
+    padding: 10px 5px;
+    margin-right: 0px;
+}
+
+/* Night mode switcher  */
+
+.navigation__button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.navigation__nightModeButton{
     padding: 10px 15px;
     background-color: rgb(204, 200, 200);
     color: #000;
@@ -36,13 +68,60 @@
     font-family: 'Roboto', sans-serif;
     border-radius: 5px;
     border: none;
-    cursor: pointer;
 }
 
-.button:hover{
+.navigation__nightModeButton:hover{
     background-color: rgba(159, 159, 159, 0.885);
     color: #fff;
 }
+
+.navigation__nightModeButtonMobile{
+    width: 30px;
+    height: auto;
+}
+
+.navigation__nightModeButtonMobile:hover{
+    opacity: 70%;
+}
+
+/* Mobile menu humburger button  */
+
+.navigation__hamburger {
+    background-color: rgb(204, 200, 200);
+    width: 33px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+}
+
+.navigation__hamburger:hover {
+    background-color: rgba(159, 159, 159, 0.885);
+}
+
+.navigation__hamburgerItem {
+    display: block;
+    width: 25px;
+    border-bottom: 3px solid #000;
+}
+
+.navigation__hamburgerItem:first-child {
+    margin-bottom: 4px;
+}
+
+.navigation__hamburgerItem:last-child {
+    margin-top: 4px;
+}
+
+.mobileMenu--off{
+    display: none;
+}
+
 
 .header{
     width: 100%;
@@ -104,6 +183,35 @@
 
     .header__subtitle {
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .navigation__item--mobile {
+        display: none;
+    }
+
+    .navigation__nightModeButtonMobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navigation__item:nth-child(n+1):nth-child(-n+3) {
+        display: none;
+    }
+
+    .navigation__nightModeButton{
+        display: none;
+    }
+
+    .navigation{
+        flex-direction: row;
+        padding-right: 5px;
+    }
+
+    .navigation__button{
+        display: flex;
     }
 }
 
