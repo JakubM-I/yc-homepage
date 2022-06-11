@@ -87,5 +87,8 @@ navHamburger.addEventListener("click", () =>{
 mobileMenuItem.forEach((m) =>{
     m.addEventListener("click", () =>{
         mobileMenu.classList.toggle("mobileMenu--off");
+        topHamburgerItem.classList.toggle("navigation__hamburgerItem--topEffect");
+        middleHamburgerItem.classList.toggle("navigation__hamburgerItem--middleEffect");
+        bottomHamburgerItem.classList.toggle("navigation__hamburgerItem--bottomEffect");
     })
 })
