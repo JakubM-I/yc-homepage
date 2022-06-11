@@ -43,7 +43,6 @@
 }
 
 .navigation__link:hover{
-    /* background-color: #bdbdbd54; */
     color: hsl(0, 99%, 60%);
 }
 
@@ -169,7 +168,6 @@
 .navigation__hamburgerItem--bottomEffect{
     transform: rotate(-45deg) translate(5px, -4px);
 }
-
 
 /* Main header with title and picture */
 
