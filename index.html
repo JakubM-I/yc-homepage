@@ -12,37 +12,42 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-   <title>Jakub Musiałowski - ecommersiak</title>
+   <title>Jakub Musiałowski - frontend developer z zapleczem ecommerce</title>
 </head>
 
 <body class="body">
    <header id="top">
       <nav>
          <ul class="navigation">
+            <li class="navigation__item">
+               <img class="navigation__logo js-navLogoWhite" src="picture/logo-white.png" alt="Logo">
+               <img class="navigation__logo js-navLogoBlack navigation__logo--off" src="picture/logo-black.png" alt="Logo">
+            </li>
             <li class="navigation__item"><a class="navigation__link" href="#internet">Internet</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#table">Tabela</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#kodowanie">Kodowanie</a></li>
 
             <li class="navigation__item js-navButton">
-               <button class="navigation__button js-nightModeSwitch">
-                  <span class="navigation__nightModeButton js-nightModeButton">Ciemny motyw</span>
-                  <img class="navigation__nightModeButtonMobile" src="picture/night-mode-icon.png" alt="">
+               <button class="navigation__button js-themeModeSwitch">
+                  <span class="navigation__themeModeButton js-themeModeButton">Ciemny motyw</span>
+                  <img class="navigation__themeModeIcon js-themeSwitchIconNight" src="picture/night-mode-icon.png" alt="">
+                  <img class="navigation__themeModeIcon navigation__themeModeIcon--off js-themeSwitchIconDay" src="picture/day-mode-icon.png" alt="">
                </button>
             </li>
 
             <li class="navigation__item navigation__item--mobile">
                <button class="navigation__hamburger js-navHamburger">
-                  <span class="navigation__hamburgerItem"></span>
-                  <span class="navigation__hamburgerItem"></span>
-                  <span class="navigation__hamburgerItem"></span>
+                  <span class="navigation__hamburgerItem js-topHamburgerItem"></span>
+                  <span class="navigation__hamburgerItem js-middleHamburgerItem"></span>
+                  <span class="navigation__hamburgerItem js-bottomHamburgerItem"></span>
                </button>
             </li>
          </ul>
          <div class="mobileMenu mobileMenu--off js-mobileMenu">
-            <ul class="mobileMenu__list">
-               <li class="mobileMenu__item"><a class="navigation__link" href="#internet">Internet</a></li>
-               <li class="mobileMenu__item"><a class="navigation__link" href="#table">Tabela</a></li>
-               <li class="mobileMenu__item"><a class="navigation__link" href="#kodowanie">Kodowanie</a></li>
+            <ul class="mobileMenu__list js-mobileMenuList">
+               <li class="mobileMenu__item js-mobileMenuItem"><a class="navigation__link" href="#internet">Internet</a></li>
+               <li class="mobileMenu__item js-mobileMenuItem"><a class="navigation__link" href="#table">Tabela</a></li>
+               <li class="mobileMenu__item js-mobileMenuItem"><a class="navigation__link" href="#kodowanie">Kodowanie</a></li>
             </ul>
          </div>
       </nav>
@@ -52,7 +57,7 @@
          </div>
          <div class="header__title">
             <h1 class="header__h1">Jakub Musiałowski</h1>
-            <p class="header__subtitle">Junior Frontend Developer z doświadczeniem w E-commerce</p>
+            <p class="header__subtitle">Junior Frontend Developer z zapleczem E-commerce</p>
          </div>
       </div>
    </header>
@@ -95,44 +100,44 @@
                   <tr>
                      <th class="onlineBuyer__tableCell onlineBuyer__tableCell--empty"></th>
                      <th class="onlineBuyer__tableCell onlineBuyer__tableCell--empty"></th>
-                     <th class="onlineBuyer__tableCell onlineBuyer__colHead" colspan="3">Kupujący w sieci</th>
+                     <th class="onlineBuyer__tableCell onlineBuyer__colHead js-tableCell" colspan="3">Kupujący w sieci</th>
                   </tr>
                   <tr>
-                     <th class="onlineBuyer__tableCell onlineBuyer__colHead" scope="col">Rok</th>
-                     <th class="onlineBuyer__tableCell onlineBuyer__colHead" scope="col">Sprzedaż (mld)</th>
-                     <th class="onlineBuyer__tableCell onlineBuyer__colHead" scope="col">Kobiety</th>
-                     <th class="onlineBuyer__tableCell onlineBuyer__colHead" scope="col">Mężczyźni</th>
-                     <th class="onlineBuyer__tableCell onlineBuyer__colHead" scope="col">Ogółem</th>
+                     <th class="onlineBuyer__tableCell onlineBuyer__colHead js-tableCell" scope="col">Rok</th>
+                     <th class="onlineBuyer__tableCell onlineBuyer__colHead js-tableCell" scope="col">Sprzedaż (mld)</th>
+                     <th class="onlineBuyer__tableCell onlineBuyer__colHead js-tableCell" scope="col">Kobiety</th>
+                     <th class="onlineBuyer__tableCell onlineBuyer__colHead js-tableCell" scope="col">Mężczyźni</th>
+                     <th class="onlineBuyer__tableCell onlineBuyer__colHead js-tableCell" scope="col">Ogółem</th>
                   </tr>
                   </thead>
                   <tbody>
                      <tr>
-                        <th class="onlineBuyer__tableCell onlineBuyer__rowHead" scope="row">2018</th>
-                        <td class="onlineBuyer__tableCell">53</td>
-                        <td class="onlineBuyer__tableCell">54%</td>
-                        <td class="onlineBuyer__tableCell">46%</td>
-                        <td class="onlineBuyer__tableCell">56%</td>
+                        <th class="onlineBuyer__tableCell onlineBuyer__rowHead js-tableCell" scope="row">2018</th>
+                        <td class="onlineBuyer__tableCell js-tableCell">53</td>
+                        <td class="onlineBuyer__tableCell js-tableCell">54%</td>
+                        <td class="onlineBuyer__tableCell js-tableCell">46%</td>
+                        <td class="onlineBuyer__tableCell js-tableCell">56%</td>
                      </tr>
                      <tr>
-                        <th class="onlineBuyer__tableCell onlineBuyer__rowHead" scope="row">2019</th>
-                        <td class="onlineBuyer__tableCell">61</td>
-                        <td class="onlineBuyer__tableCell">50%</td>
-                        <td class="onlineBuyer__tableCell">50%</td>
-                        <td class="onlineBuyer__tableCell">62%</td>
+                        <th class="onlineBuyer__tableCell onlineBuyer__rowHead js-tableCell" scope="row">2019</th>
+                        <td class="onlineBuyer__tableCell js-tableCell">61</td>
+                        <td class="onlineBuyer__tableCell js-tableCell">50%</td>
+                        <td class="onlineBuyer__tableCell js-tableCell">50%</td>
+                        <td class="onlineBuyer__tableCell js-tableCell">62%</td>
                      </tr>
                      <tr>
-                        <th class="onlineBuyer__tableCell onlineBuyer__rowHead" scope="row">2020</th>
-                        <td class="onlineBuyer__tableCell">83</td>
-                        <td class="onlineBuyer__tableCell">51%</td>
-                        <td class="onlineBuyer__tableCell">49%</td>
-                        <td class="onlineBuyer__tableCell">74%</td>
+                        <th class="onlineBuyer__tableCell onlineBuyer__rowHead js-tableCell" scope="row">2020</th>
+                        <td class="onlineBuyer__tableCell js-tableCell">83</td>
+                        <td class="onlineBuyer__tableCell js-tableCell">51%</td>
+                        <td class="onlineBuyer__tableCell js-tableCell">49%</td>
+                        <td class="onlineBuyer__tableCell js-tableCell">74%</td>
                      </tr>
                      <tr>
-                        <th class="onlineBuyer__tableCell onlineBuyer__rowHead" scope="row">2021</th>
-                        <td class="onlineBuyer__tableCell">93</td>
-                        <td class="onlineBuyer__tableCell">53%</td>
-                        <td class="onlineBuyer__tableCell">47%</td>
-                        <td class="onlineBuyer__tableCell">77%</td>
+                        <th class="onlineBuyer__tableCell onlineBuyer__rowHead js-tableCell" scope="row">2021</th>
+                        <td class="onlineBuyer__tableCell js-tableCell">93</td>
+                        <td class="onlineBuyer__tableCell js-tableCell">53%</td>
+                        <td class="onlineBuyer__tableCell js-tableCell">47%</td>
+                        <td class="onlineBuyer__tableCell js-tableCell">77%</td>
                      </tr>
                   </tbody>
                </table>

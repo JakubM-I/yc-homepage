@@ -23,6 +23,10 @@
     border: 1px solid #000;
 }
 
+.onlineBuyer__tableCell--black{
+    border: 1px solid #fff;
+}
+
 .onlineBuyer__tableCell--empty{
     border: none;
 }
