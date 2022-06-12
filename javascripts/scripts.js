@@ -1,4 +1,4 @@
-console.log("Witaj internauto!");
+console.log("Witaj internauto na mojej stronie! Jestem początkujacym fronend developerem z kilkunastoletnim doświadczeniem w ecommerce");
 
 let page = document.querySelector("body");
 let header = document.querySelector(".header");
