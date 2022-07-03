@@ -22,17 +22,6 @@ let topHamburgerItem = document.querySelector(".js-topHamburgerItem");
 let middleHamburgerItem = document.querySelector(".js-middleHamburgerItem");
 let bottomHamburgerItem = document.querySelector(".js-bottomHamburgerItem");
 
-
-window.addEventListener("resize", () => {
-    if(window.innerWidth < 650){
-        navButton.classList.remove("navigation__item--button");
-        navButton.classList.add("navigation__item--mobile");
-    } else {
-        navButton.classList.add("navigation__item--button");
-        navButton.classList.remove("navigation__item--mobile");
-    }
-})
-
 nightModeSwitch.addEventListener("click", () => {
     body.classList.toggle("body--nightTheme");
     paragraphInternet.classList.toggle("paragraph__text--iconInternetBlack");

@@ -234,6 +234,16 @@
     }
 }
 
+@media screen and (max-width: 675px) {
+    .navigation__item--button{
+        padding: 10px 5px;
+    }
+
+    .navigation__themeModeButton{
+        padding: 10px 5px;
+    }
+}
+
 @media screen and (min-width: 650px) {
     .navigation__item--mobile {
         display: none;
@@ -264,6 +274,10 @@
 
     .navigation__item:first-child{
         margin-left: 0;
+    }
+
+    .navigation__item--button{
+        margin-right: 0px;
     }
 }
 
