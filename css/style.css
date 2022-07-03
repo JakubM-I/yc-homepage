@@ -13,15 +13,9 @@ html{
     line-height: 1.35em;
 }
 
-
-p{
-    font-size: 16px;
-    margin: 0px;
-}
-
-h2{
-    font-size: 22px;
-    margin-bottom: 10px;
+.body--nightTheme{
+    color: #fff;
+    background-color: #000;
 }
 
 .main{
@@ -35,16 +29,22 @@ h2{
     min-height: 80px;
 }
 
-.paragraph-text{
+.paragraph__title{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.paragraph__text{
+    font-size: 16px;
     padding-left: 48px;
     padding-right: 20px;
     text-align: left;
-    margin-top: 0px;
+    margin: 0px;
     margin-bottom: 10px;
     position: relative;
 }
 
-p.paragraph-text::before{
+.paragraph__text--icon::before{
     content: "";
     background-size: contain;
     width: 40px;
@@ -56,19 +56,19 @@ p.paragraph-text::before{
     left: 0px;
 }
 
-.text1::before{
+.paragraph__text--iconInternet::before{
     background-image: url(../picture/internet-icon.png);
 }
 
-.text1.blackStyle::before{
+.paragraph__text--iconInternetBlack::before{
     background-image: url(../picture/internet-icon-white.png);
 }
 
-.text2::before{
+.paragraph__text--iconCoding::before{
     background-image: url(../picture/programming-icon.png);
 }
 
-.text2.blackStyle::before{
+.paragraph__text--iconCodingBlack::before{
     background-image: url(../picture/programming-icon-white.png);
 }
 
@@ -77,11 +77,6 @@ p.paragraph-text::before{
     width: 100%;
     text-align: center;
     margin-top: 35px;
-}
-
-.blackStyle{
-    color: #fff;
-    background-color: #000;
 }
 
 .topReturn{
@@ -110,7 +105,7 @@ p.paragraph-text::before{
 }
 
 @media screen and (max-width: 1020px) {
-    .paragraph-text{
+    .paragraph__text{
         padding-right: 10px;
     }
 }

@@ -31,11 +31,11 @@
     border: none;
 }
 
-.onlineBuyer__colHead, .onlineBuyer__rowHead{
+.onlineBuyer__tableCell--head{
     background-color: hsl(0, 2%, 97%);
 }
 
-.onlineBuyer__colHead--black, .onlineBuyer__rowHead--black{
+.onlineBuyer__tableCell--headBlack{
     background-color: hsl(0, 1%, 46%);
 }
 

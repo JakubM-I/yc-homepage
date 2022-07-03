@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link href="css/style.css" rel="stylesheet">
    <link href="css/header.css" rel="stylesheet">
-   <link href="css/tabela.css" rel="stylesheet">
+   <link href="css/table.css" rel="stylesheet">
    <script src="javascripts/scripts.js" defer></script>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
    <title>Jakub Musiałowski - junior frontend developer z zapleczem ecommerce</title>
 </head>
-
 <body class="body">
    <header id="top">
       <nav>
@@ -24,9 +23,8 @@
                <img class="navigation__logo js-navLogoBlack navigation__logo--off" src="picture/logo-black.png" alt="Logo">
             </li>
             <li class="navigation__item"><a class="navigation__link" href="#internet">Internet</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#table">Sprzedaż</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#sprzedaz">Sprzedaż</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#kodowanie">Kodowanie</a></li>
-
             <li class="navigation__item js-navButton">
                <button class="navigation__button js-themeModeSwitch">
                   <span class="navigation__themeModeButton js-themeModeButton">Ciemny motyw</span>
@@ -34,7 +32,6 @@
                   <img class="navigation__themeModeIcon navigation__themeModeIcon--off js-themeSwitchIconDay" src="picture/day-mode-icon.png" alt="Day mode icon">
                </button>
             </li>
-
             <li class="navigation__item navigation__item--mobile">
                <button class="navigation__hamburger js-navHamburger">
                   <span class="navigation__hamburgerItem js-topHamburgerItem"></span>
@@ -46,7 +43,7 @@
          <div class="mobileMenu mobileMenu--off js-mobileMenu">
             <ul class="mobileMenu__list js-mobileMenuList">
                <li class="mobileMenu__item js-mobileMenuItem"><a class="navigation__link" href="#internet">Internet</a></li>
-               <li class="mobileMenu__item js-mobileMenuItem"><a class="navigation__link" href="#table">Sprzedaż</a></li>
+               <li class="mobileMenu__item js-mobileMenuItem"><a class="navigation__link" href="#sprzedaz">Sprzedaż</a></li>
                <li class="mobileMenu__item js-mobileMenuItem"><a class="navigation__link" href="#kodowanie">Kodowanie</a></li>
             </ul>
          </div>
@@ -61,12 +58,11 @@
          </div>
       </div>
    </header>
-   <main>
-      <div class="main">
+   <main class="main">
          <article>
-            <div class="paragraph chapter1">
-               <h2 class="paragraph-title" id="internet">Internet to ogromne możliwości</h2>
-               <p class="paragraph-text text1">Zastosowaniem internetu w szeroko pojętym marketingu zainteresowałem
+            <div class="paragraph">
+               <h2 class="paragraph__title" id="internet">Internet to ogromne możliwości</h2>
+               <p class="paragraph__text paragraph__text--icon paragraph__text--iconInternet js-paragraphIconInternet">Zastosowaniem internetu w szeroko pojętym marketingu zainteresowałem
                   się już na studiach, czyli całkiem ładny kawałek czasu temu. Moje prace, licencjacka czy
                   magisterska,
                   dotyczyły właśnie zastosowania internetu w nowoczesnych działaniach marketingowych. Rozwiązania
@@ -74,8 +70,7 @@
                   na ówczesne czasy były dość skromne, w porównaniu do tego co mamy dzisiaj. Szybko jednak moja
                   uwaga
                   skupiła się na typowych działaniach ecommerce.</p>
-
-               <p class="paragraph-text">Pierwszy sklep, który zresztą działa do dziś, <em>założyłem w 2006
+               <p class="paragraph__text">Pierwszy sklep, który zresztą działa do dziś, <em>założyłem w 2006
                      roku</em>.
                   To były jednak zupełnie inne czasy. Przez te lata handel internetowy przeszedł niewyobrażalną
                   drogę zmian. Z roku na rok sprzedaż internetowa notuje kolejne wzrosty, coraz więcej osób
@@ -90,9 +85,9 @@
             </div>
          </article>
          <article>
-            <div class="onlineBuyerTable" id="table">
-               <h2 class="paragraph-title" id="internet">Sprzedaż i kupujący w sieci</h2>
-               <p class="paragraph-text">Poniższe krótkie zestawienie przedstawia dynamikę wzrostu sprzedaży online z roku na rok w ciągu ostatnich 4 lat. Ostatnie 2 lata, czas pandemii i lockdownów znacząco wpłynął na przyspieszenie tych zmian. Wielu specjalistów ocenia, że zmiany które zaszły i tak miałyby miejsca. Jednak okres ograniczenia tradycyjnego handlu przyspieszył te zmiany o kilka lat. Co warto zauważyć, większą popularność zakupy internetowe zyskują wśród kobiet.</p>
+            <h2 class="paragraph__title" id="sprzedaz">Sprzedaż i kupujący w sieci</h2>
+               <p class="paragraph__text">Poniższe krótkie zestawienie przedstawia dynamikę wzrostu sprzedaży online z roku na rok w ciągu ostatnich 4 lat. Ostatnie 2 lata, czas pandemii i lockdownów znacząco wpłynął na przyspieszenie tych zmian. Wielu specjalistów ocenia, że zmiany które zaszły i tak miałyby miejsca. Jednak okres ograniczenia tradycyjnego handlu przyspieszył te zmiany o kilka lat. Co warto zauważyć, większą popularność zakupy internetowe zyskują wśród kobiet.</p>
+            <div class="onlineBuyerTable">
                <table class="onlineBuyer">
                   <caption class="onlineBuyer__tableTitle">Sprzedaż i kupujący w internecie w Polsce w latach
                      2018-2021.</caption>
@@ -100,43 +95,44 @@
                      <col span="4">
                      <col class="onlineBuyer__colSummary">
                   </colgroup>
+                  <thead>
                   <tr>
                      <th class="onlineBuyer__tableCell onlineBuyer__tableCell--empty"></th>
                      <th class="onlineBuyer__tableCell onlineBuyer__tableCell--empty"></th>
-                     <th class="onlineBuyer__tableCell onlineBuyer__colHead js-tableCell" colspan="3">Kupujący w sieci</th>
+                     <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" colspan="3">Kupujący w sieci</th>
                   </tr>
                   <tr>
-                     <th class="onlineBuyer__tableCell onlineBuyer__colHead js-tableCell" scope="col">Rok</th>
-                     <th class="onlineBuyer__tableCell onlineBuyer__colHead js-tableCell" scope="col">Sprzedaż (mld)</th>
-                     <th class="onlineBuyer__tableCell onlineBuyer__colHead js-tableCell" scope="col">Kobiety</th>
-                     <th class="onlineBuyer__tableCell onlineBuyer__colHead js-tableCell" scope="col">Mężczyźni</th>
-                     <th class="onlineBuyer__tableCell onlineBuyer__colHead js-tableCell" scope="col">Ogółem</th>
+                     <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="col">Rok</th>
+                     <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="col">Sprzedaż (mld)</th>
+                     <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="col">Kobiety</th>
+                     <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="col">Mężczyźni</th>
+                     <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="col">Ogółem</th>
                   </tr>
                   </thead>
                   <tbody>
                      <tr>
-                        <th class="onlineBuyer__tableCell onlineBuyer__rowHead js-tableCell" scope="row">2018</th>
+                        <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="row">2018</th>
                         <td class="onlineBuyer__tableCell js-tableCell">53</td>
                         <td class="onlineBuyer__tableCell js-tableCell">54%</td>
                         <td class="onlineBuyer__tableCell js-tableCell">46%</td>
                         <td class="onlineBuyer__tableCell js-tableCell">56%</td>
                      </tr>
                      <tr>
-                        <th class="onlineBuyer__tableCell onlineBuyer__rowHead js-tableCell" scope="row">2019</th>
+                        <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="row">2019</th>
                         <td class="onlineBuyer__tableCell js-tableCell">61</td>
                         <td class="onlineBuyer__tableCell js-tableCell">50%</td>
                         <td class="onlineBuyer__tableCell js-tableCell">50%</td>
                         <td class="onlineBuyer__tableCell js-tableCell">62%</td>
                      </tr>
                      <tr>
-                        <th class="onlineBuyer__tableCell onlineBuyer__rowHead js-tableCell" scope="row">2020</th>
+                        <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="row">2020</th>
                         <td class="onlineBuyer__tableCell js-tableCell">83</td>
                         <td class="onlineBuyer__tableCell js-tableCell">51%</td>
                         <td class="onlineBuyer__tableCell js-tableCell">49%</td>
                         <td class="onlineBuyer__tableCell js-tableCell">74%</td>
                      </tr>
                      <tr>
-                        <th class="onlineBuyer__tableCell onlineBuyer__rowHead js-tableCell" scope="row">2021</th>
+                        <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="row">2021</th>
                         <td class="onlineBuyer__tableCell js-tableCell">93</td>
                         <td class="onlineBuyer__tableCell js-tableCell">53%</td>
                         <td class="onlineBuyer__tableCell js-tableCell">47%</td>
@@ -147,11 +143,10 @@
 
             </div>
          </article>
-
          <article>
-            <div class="paragraph chapter2">
-               <h2 class="paragraph-title" id="kodowanie">Kodowanie? Doskonałe uzupełnienie</h2>
-               <p class="paragraph-text text2">Ecommerce to dziedzina <strong>mocno techniczna</strong>. Nie da się
+            <div class="paragraph">
+               <h2 class="paragraph__title" id="kodowanie">Kodowanie? Doskonałe uzupełnienie</h2>
+               <p class="paragraph__text paragraph__text--icon paragraph__text--iconCoding js-paragraphIconCoding">Ecommerce to dziedzina <strong>mocno techniczna</strong>. Nie da się
                   skutecznie prowadzić działań, ani nawet zarządzać sprzedażą internetową bez przynajmniej
                   minimalnej znajomości aspektów technicznych z jakimi wiążę się funkcjonowanie sklepów
                   internetowych. A
@@ -159,7 +154,7 @@
                   funkcjach, czy w końcu o działaniu samego silnika sklepu na serwerze. Poznanie sklepów od strony
                   kodu jest wręcz
                   niezbędne.</p>
-               <p class="paragraph-text">A nabiera to jeszcze większego znaczenia, gdy wiele rzeczy robi się
+               <p class="paragraph__text">A nabiera to jeszcze większego znaczenia, gdy wiele rzeczy robi się
                   samemu. Nie każdy sklep prowadzony jest przez cały sztab ludzi, gdzie każdy skupia się tylko na
                   swoim
                   wycinku. Często są to pojedyncze osoby, które muszą zająć się każdym aspektem funkcjonowania
@@ -171,19 +166,12 @@
                   połączeniu z wiedzą programistyczną. A to daje duże możliwości. Dlatego będąc na początku swojej drogi do frontend developera na każdym kroku staram się w swoich działaniach uwzględniać wymagania związane z funkcjonowaniem stron w internecie. </p>
             </div>
          </article>
-
-      </div>
-
    </main>
-
-   <footer>
-      <div class="footer">
+   <footer class="footer">
          <p> &copy; 2022 Jakub Musiałowski </p>
-      </div>
    </footer>
    <div class="topReturn">
       <a class="topReurn__link" href="#top">Do góry</a>
    </div>
 </body>
-
 </html>

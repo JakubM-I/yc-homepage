@@ -1,20 +1,14 @@
-console.log("Witaj internauto na mojej stronie! Jestem początkujacym fronend developerem z kilkunastoletnim doświadczeniem w ecommerce");
+console.log("Witaj internauto na mojej stronie! Jestem początkujacym frontend developerem z kilkunastoletnim doświadczeniem w ecommerce");
 
-let page = document.querySelector("body");
-let header = document.querySelector(".header");
-let text = document.querySelector(".main");
-let web = document.querySelector(".text1");
-let code = document.querySelector(".text2");
-let footer = document.querySelector(".footer");
+let body = document.querySelector("body");
+let paragraphInternet = document.querySelector(".js-paragraphIconInternet");
+let paragraphCoding = document.querySelector(".js-paragraphIconCoding");
 let nightModeSwitch = document.querySelector(".js-themeModeSwitch");
 let nightModeButton =  document.querySelector(".js-themeModeButton");
-let menu = document.querySelector(".navigation");
-let menuLink = document.querySelectorAll(".navigation__link");
+let navigationLink = document.querySelectorAll(".navigation__link");
 let tableCell = document.querySelectorAll(".js-tableCell");
-let rowHead = document.querySelectorAll(".onlineBuyer__rowHead");
-let colHead = document.querySelectorAll(".onlineBuyer__colHead");
+let cellHead = document.querySelectorAll(".onlineBuyer__tableCell--head");
 let colSummary = document.querySelector(".onlineBuyer__colSummary");
-let screenWidth = screen.width;
 let navButton = document.querySelector(".js-navButton");
 let navHamburger = document.querySelector(".js-navHamburger");
 let mobileMenu = document.querySelector(".js-mobileMenu");
@@ -29,7 +23,6 @@ let middleHamburgerItem = document.querySelector(".js-middleHamburgerItem");
 let bottomHamburgerItem = document.querySelector(".js-bottomHamburgerItem");
 
 
-
 window.addEventListener("resize", () => {
     if(window.innerWidth < 650){
         navButton.classList.remove("navigation__item--button");
@@ -41,20 +34,16 @@ window.addEventListener("resize", () => {
 })
 
 nightModeSwitch.addEventListener("click", () => {
-    page.classList.toggle("blackStyle");
-    header.classList.toggle("blackStyle");
-    text.classList.toggle("blackStyle");
-    footer.classList.toggle("blackStyle");
-    web.classList.toggle("blackStyle");
-    code.classList.toggle("blackStyle");
+    body.classList.toggle("body--nightTheme");
+    paragraphInternet.classList.toggle("paragraph__text--iconInternetBlack");
+    paragraphCoding.classList.toggle("paragraph__text--iconCodingBlack");
     navLogoWhite.classList.toggle("navigation__logo--off");
     navLogoBlack.classList.toggle("navigation__logo--off");
     mobileMenuList.classList.toggle("mobileMenu__list--black");
     themeSwitchIconNight.classList.toggle("navigation__themeModeIcon--off");
     themeSwitchIconDay.classList.toggle("navigation__themeModeIcon--off");
 
-
-    menuLink.forEach((l) => {
+    navigationLink.forEach((l) => {
         l.classList.toggle("navigation__link--black");
     })
 
@@ -66,15 +55,13 @@ nightModeSwitch.addEventListener("click", () => {
         c.classList.toggle("onlineBuyer__tableCell--black");
     })
 
-    rowHead.forEach((r) => {
-        r.classList.toggle("onlineBuyer__rowHead--black");
+    cellHead.forEach((r) => {
+        r.classList.toggle("onlineBuyer__tableCell--headBlack");
     })
-    colHead.forEach((c) => {
-        c.classList.toggle("onlineBuyer__colHead--black");
-    })
+
     colSummary.classList.toggle("onlineBuyer__colSummary--black");
     
-    nightModeButton.innerText = page.classList.contains("blackStyle") ? "Jasny motyw" : "Ciemny motyw";
+    nightModeButton.innerText = body.classList.contains("body--nightTheme") ? "Jasny motyw" : "Ciemny motyw";
 })
 
 navHamburger.addEventListener("click", () =>{
