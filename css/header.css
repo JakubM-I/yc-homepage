@@ -196,22 +196,23 @@
 }
 
 .header__title{
-    max-width: 500px;
+    max-width: fit-content;
     width: 100%;
     padding: 0 10px;
     color: #fff;
 }
 
 .header__h1{
-    font-size: 53px;
+    font-size: min(max(10.23vw, 29px), 53px);
     line-height: 1.2em;
     margin-top: 0px;
     margin-bottom: 5px;
 }
 
 .header__subtitle{
-    font-size: 23px;
+    font-size: min(max(4.45vw, 18px), 23px);
     text-align: right;
+    margin-top: 20px;
 }
 
 .header__line{
@@ -286,11 +287,11 @@
         max-width: 100%;
     }
 
-    .header__h1{
+    /* .header__h1{
         font-size: 46px;
-    }
+    } */
 
-    .header__subtitle {
+    /* .header__subtitle {
         font-size: 18px;
-    }
+    } */
 }

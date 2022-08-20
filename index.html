@@ -22,9 +22,9 @@
                <img class="navigation__logo js-navLogoWhite" src="picture/logo-white.png" alt="Logo">
                <img class="navigation__logo js-navLogoBlack navigation__logo--off" src="picture/logo-black.png" alt="Logo">
             </li>
-            <li class="navigation__item"><a class="navigation__link" href="#internet">Internet</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#sprzedaz">Sprzedaż</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#kodowanie">Kodowanie</a></li>
+            <li class="navigation__item"><a class="navigation__link js-navigationLink" href="#internet">Internet</a></li>
+            <li class="navigation__item"><a class="navigation__link js-navigationLink" href="#sprzedaz">Sprzedaż</a></li>
+            <li class="navigation__item"><a class="navigation__link js-navigationLink" href="#kodowanie">Kodowanie</a></li>
             <li class="navigation__item navigation__item--button js-navButton">
                <button class="navigation__button js-themeModeSwitch">
                   <span class="navigation__themeModeButton js-themeModeButton">Ciemny motyw</span>
@@ -42,9 +42,9 @@
          </ul>
          <div class="mobileMenu mobileMenu--off js-mobileMenu">
             <ul class="mobileMenu__list js-mobileMenuList">
-               <li class="mobileMenu__item js-mobileMenuItem"><a class="navigation__link" href="#internet">Internet</a></li>
-               <li class="mobileMenu__item js-mobileMenuItem"><a class="navigation__link" href="#sprzedaz">Sprzedaż</a></li>
-               <li class="mobileMenu__item js-mobileMenuItem"><a class="navigation__link" href="#kodowanie">Kodowanie</a></li>
+               <li class="mobileMenu__item js-mobileMenuItem"><a class="navigation__link js-navigationLink" href="#internet">Internet</a></li>
+               <li class="mobileMenu__item js-mobileMenuItem"><a class="navigation__link js-navigationLink" href="#sprzedaz">Sprzedaż</a></li>
+               <li class="mobileMenu__item js-mobileMenuItem"><a class="navigation__link js-navigationLink" href="#kodowanie">Kodowanie</a></li>
             </ul>
          </div>
       </nav>
@@ -85,62 +85,69 @@
             </div>
          </article>
          <article>
-            <h2 class="paragraph__title" id="sprzedaz">Sprzedaż i kupujący w sieci</h2>
-               <p class="paragraph__text">Poniższe krótkie zestawienie przedstawia dynamikę wzrostu sprzedaży online z roku na rok w ciągu ostatnich 4 lat. Ostatnie 2 lata, czas pandemii i lockdownów znacząco wpłynął na przyspieszenie tych zmian. Wielu specjalistów ocenia, że zmiany które zaszły i tak miałyby miejsca. Jednak okres ograniczenia tradycyjnego handlu przyspieszył te zmiany o kilka lat. Co warto zauważyć, większą popularność zakupy internetowe zyskują wśród kobiet.</p>
-            <div class="onlineBuyerTable">
-               <table class="onlineBuyer">
-                  <caption class="onlineBuyer__tableTitle">Sprzedaż i kupujący w internecie w Polsce w latach
-                     2018-2021.</caption>
-                  <colgroup>
-                     <col span="4">
-                     <col class="onlineBuyer__colSummary">
-                  </colgroup>
-                  <thead>
-                  <tr>
-                     <th class="onlineBuyer__tableCell onlineBuyer__tableCell--empty"></th>
-                     <th class="onlineBuyer__tableCell onlineBuyer__tableCell--empty"></th>
-                     <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" colspan="3">Kupujący w sieci</th>
-                  </tr>
-                  <tr>
-                     <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="col">Rok</th>
-                     <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="col">Sprzedaż (mld)</th>
-                     <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="col">Kobiety</th>
-                     <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="col">Mężczyźni</th>
-                     <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="col">Ogółem</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="row">2018</th>
-                        <td class="onlineBuyer__tableCell js-tableCell">53</td>
-                        <td class="onlineBuyer__tableCell js-tableCell">54%</td>
-                        <td class="onlineBuyer__tableCell js-tableCell">46%</td>
-                        <td class="onlineBuyer__tableCell js-tableCell">56%</td>
-                     </tr>
-                     <tr>
-                        <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="row">2019</th>
-                        <td class="onlineBuyer__tableCell js-tableCell">61</td>
-                        <td class="onlineBuyer__tableCell js-tableCell">50%</td>
-                        <td class="onlineBuyer__tableCell js-tableCell">50%</td>
-                        <td class="onlineBuyer__tableCell js-tableCell">62%</td>
-                     </tr>
-                     <tr>
-                        <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="row">2020</th>
-                        <td class="onlineBuyer__tableCell js-tableCell">83</td>
-                        <td class="onlineBuyer__tableCell js-tableCell">51%</td>
-                        <td class="onlineBuyer__tableCell js-tableCell">49%</td>
-                        <td class="onlineBuyer__tableCell js-tableCell">74%</td>
-                     </tr>
-                     <tr>
-                        <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="row">2021</th>
-                        <td class="onlineBuyer__tableCell js-tableCell">93</td>
-                        <td class="onlineBuyer__tableCell js-tableCell">53%</td>
-                        <td class="onlineBuyer__tableCell js-tableCell">47%</td>
-                        <td class="onlineBuyer__tableCell js-tableCell">77%</td>
-                     </tr>
-                  </tbody>
-               </table>
-
+            <div class="paragraph">
+               <h2 class="paragraph__title" id="sprzedaz">Sprzedaż i kupujący w sieci</h2>
+               <p class="paragraph__text">Poniższe krótkie zestawienie przedstawia dynamikę wzrostu sprzedaży online z roku na rok w
+                  ciągu ostatnich 4 lat. Ostatnie 2 lata, czas pandemii i lockdownów znacząco wpłynął na przyspieszenie tych zmian.
+                  Wielu specjalistów ocenia, że zmiany które zaszły i tak miałyby miejsca. Jednak okres ograniczenia tradycyjnego
+                  handlu przyspieszył te zmiany o kilka lat. Co warto zauważyć, większą popularność zakupy internetowe zyskują wśród
+                  kobiet.</p>
+               <div class="onlineBuyerTable">
+                  <table class="onlineBuyer">
+                     <caption class="onlineBuyer__tableTitle">Sprzedaż i kupujący w internecie w Polsce w latach
+                        2018-2021.</caption>
+                     <colgroup>
+                        <col span="4">
+                        <col class="onlineBuyer__colSummary">
+                     </colgroup>
+                     <thead>
+                        <tr>
+                           <th class="onlineBuyer__tableCell onlineBuyer__tableCell--empty"></th>
+                           <th class="onlineBuyer__tableCell onlineBuyer__tableCell--empty"></th>
+                           <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" colspan="3">Kupujący w sieci
+                           </th>
+                        </tr>
+                        <tr>
+                           <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="col">Rok</th>
+                           <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="col">Sprzedaż (mld)
+                           </th>
+                           <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="col">Kobiety</th>
+                           <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="col">Mężczyźni</th>
+                           <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="col">Ogółem</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="row">2018</th>
+                           <td class="onlineBuyer__tableCell js-tableCell">53</td>
+                           <td class="onlineBuyer__tableCell js-tableCell">54%</td>
+                           <td class="onlineBuyer__tableCell js-tableCell">46%</td>
+                           <td class="onlineBuyer__tableCell js-tableCell">56%</td>
+                        </tr>
+                        <tr>
+                           <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="row">2019</th>
+                           <td class="onlineBuyer__tableCell js-tableCell">61</td>
+                           <td class="onlineBuyer__tableCell js-tableCell">50%</td>
+                           <td class="onlineBuyer__tableCell js-tableCell">50%</td>
+                           <td class="onlineBuyer__tableCell js-tableCell">62%</td>
+                        </tr>
+                        <tr>
+                           <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="row">2020</th>
+                           <td class="onlineBuyer__tableCell js-tableCell">83</td>
+                           <td class="onlineBuyer__tableCell js-tableCell">51%</td>
+                           <td class="onlineBuyer__tableCell js-tableCell">49%</td>
+                           <td class="onlineBuyer__tableCell js-tableCell">74%</td>
+                        </tr>
+                        <tr>
+                           <th class="onlineBuyer__tableCell onlineBuyer__tableCell--head js-tableCell" scope="row">2021</th>
+                           <td class="onlineBuyer__tableCell js-tableCell">93</td>
+                           <td class="onlineBuyer__tableCell js-tableCell">53%</td>
+                           <td class="onlineBuyer__tableCell js-tableCell">47%</td>
+                           <td class="onlineBuyer__tableCell js-tableCell">77%</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
             </div>
          </article>
          <article>
