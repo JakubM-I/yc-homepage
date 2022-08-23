@@ -86,20 +86,16 @@
 
 .navigation__button{
     border: none;
-    background: none;
     cursor: pointer;
-}
-.navigation__themeModeButton{
     padding: 10px 15px;
     background-color: rgb(204, 200, 200);
     color: #000;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     border-radius: 5px;
-    border: none;
 }
 
-.navigation__themeModeButton:hover{
+.navigation__button:hover{
     background-color: rgba(159, 159, 159, 0.885);
     color: #fff;
 }
@@ -240,7 +236,7 @@
         padding: 10px 5px;
     }
 
-    .navigation__themeModeButton{
+    .navigation__button{
         padding: 10px 5px;
     }
 }
@@ -271,6 +267,12 @@
 
     .navigation__button{
         display: flex;
+        padding: 1px 4px;
+        background: none;
+    }
+
+    .navigation__button:hover{
+        background-color: unset;
     }
 
     .navigation__item:first-child{
@@ -286,12 +288,4 @@
     .header__picture img{
         max-width: 100%;
     }
-
-    /* .header__h1{
-        font-size: 46px;
-    } */
-
-    /* .header__subtitle {
-        font-size: 18px;
-    } */
 }
