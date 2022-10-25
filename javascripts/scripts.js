@@ -1,70 +1,130 @@
-console.log("Witaj internauto na mojej stronie! Jestem początkujacym frontend developerem z kilkunastoletnim doświadczeniem w ecommerce");
-
-let body = document.querySelector("body");
-let paragraphInternet = document.querySelector(".js-paragraphIconInternet");
-let paragraphCoding = document.querySelector(".js-paragraphIconCoding");
-let nightModeSwitch = document.querySelector(".js-themeModeSwitch");
-let nightModeButton =  document.querySelector(".js-themeModeButton");
-let navigationLink = document.querySelectorAll(".js-navigationLink");
-let tableCell = document.querySelectorAll(".js-tableCell");
-let cellHead = document.querySelectorAll(".onlineBuyer__tableCell--head");
-let colSummary = document.querySelector(".onlineBuyer__colSummary");
-let navButton = document.querySelector(".js-navButton");
-let navHamburger = document.querySelector(".js-navHamburger");
-let mobileMenu = document.querySelector(".js-mobileMenu");
-let navLogoWhite = document.querySelector(".js-navLogoWhite");
-let navLogoBlack = document.querySelector(".js-navLogoBlack");
-let mobileMenuItem = document.querySelectorAll(".js-mobileMenuItem");
-let mobileMenuList = document.querySelector(".js-mobileMenuList");
-let themeSwitchIconNight = document.querySelector(".js-themeSwitchIconNight");
-let themeSwitchIconDay = document.querySelector(".js-themeSwitchIconDay");
-let topHamburgerItem = document.querySelector(".js-topHamburgerItem");
-let middleHamburgerItem = document.querySelector(".js-middleHamburgerItem");
-let bottomHamburgerItem = document.querySelector(".js-bottomHamburgerItem");
-
-nightModeSwitch.addEventListener("click", () => {
-    body.classList.toggle("body--nightTheme");
-    paragraphInternet.classList.toggle("paragraph__text--iconInternetBlack");
-    paragraphCoding.classList.toggle("paragraph__text--iconCodingBlack");
-    navLogoWhite.classList.toggle("navigation__logo--off");
-    navLogoBlack.classList.toggle("navigation__logo--off");
-    mobileMenuList.classList.toggle("mobileMenu__list--black");
-    themeSwitchIconNight.classList.toggle("navigation__themeModeIcon--off");
-    themeSwitchIconDay.classList.toggle("navigation__themeModeIcon--off");
-
-    navigationLink.forEach((l) => {
-        l.classList.toggle("navigation__link--black");
-    })
-
-    mobileMenuItem.forEach((i) => {
-        i.classList.toggle("mobileMenu__item--black");
-    })
-
-    tableCell.forEach((c) =>{
-        c.classList.toggle("onlineBuyer__tableCell--black");
-    })
-
-    cellHead.forEach((r) => {
-        r.classList.toggle("onlineBuyer__tableCell--headBlack");
-    })
-
-    colSummary.classList.toggle("onlineBuyer__colSummary--black");
+{
+    const welcome = () => {
+        console.log("Witaj internauto na mojej stronie! Jestem początkujacym frontend developerem z kilkunastoletnim doświadczeniem w ecommerce");
+    };
     
-    nightModeButton.innerText = body.classList.contains("body--nightTheme") ? "Jasny motyw" : "Ciemny motyw";
-})
+    const mobileMenuItem = document.querySelectorAll(".js-mobileMenuItem");
 
-navHamburger.addEventListener("click", () =>{
-    mobileMenu.classList.toggle("mobileMenu--off");
-    topHamburgerItem.classList.toggle("navigation__hamburgerItem--topEffect");
-    middleHamburgerItem.classList.toggle("navigation__hamburgerItem--middleEffect");
-    bottomHamburgerItem.classList.toggle("navigation__hamburgerItem--bottomEffect");
-})
-
-mobileMenuItem.forEach((m) =>{
-    m.addEventListener("click", () =>{
+    const darkThemeToggle = () => {
+        const body = document.querySelector("body");
+        
+        body.classList.toggle("body--nightTheme");
+    };
+    
+    const nightModeButtonTextChanging = () =>{
+        const nightModeButton =  document.querySelector(".js-themeModeButton");
+    
+        nightModeButton.innerText = body.classList.contains("body--nightTheme") ? "Jasny motyw" : "Ciemny motyw";
+    };
+    
+    const tableDarkModeToggle = () => {
+        const tableCell = document.querySelectorAll(".js-tableCell");
+        const cellHead = document.querySelectorAll(".onlineBuyer__tableCell--head");
+        const colSummary = document.querySelector(".onlineBuyer__colSummary");
+    
+        tableCell.forEach((c) =>{
+            c.classList.toggle("onlineBuyer__tableCell--black");
+        })
+    
+        cellHead.forEach((h) => {
+            h.classList.toggle("onlineBuyer__tableCell--headBlack");
+        })
+    
+        colSummary.classList.toggle("onlineBuyer__colSummary--black");
+    };
+    
+    const navigationDarkModeToggle = () => {
+        const navigationLink = document.querySelectorAll(".js-navigationLink");
+        
+        navigationLink.forEach((l) => {
+            l.classList.toggle("navigation__link--black");
+        })
+    
+        mobileMenuItem.forEach((i) => {
+            i.classList.toggle("mobileMenu__item--black");
+        })
+    };
+    
+    const mobileMenuDarkModeToggle = () => {
+        const mobileMenuList = document.querySelector(".js-mobileMenuList");
+    
+        mobileMenuList.classList.toggle("mobileMenu__list--black");
+    };
+    
+    const darkIconToggle = () => {
+        const paragraphInternet = document.querySelector(".js-paragraphIconInternet");
+        const paragraphCoding = document.querySelector(".js-paragraphIconCoding");
+        const navLogoWhite = document.querySelector(".js-navLogoWhite");
+        const navLogoBlack = document.querySelector(".js-navLogoBlack");
+    
+        paragraphInternet.classList.toggle("paragraph__text--iconInternetBlack");
+        paragraphCoding.classList.toggle("paragraph__text--iconCodingBlack");
+        navLogoWhite.classList.toggle("navigation__logo--off");
+        navLogoBlack.classList.toggle("navigation__logo--off");
+    };
+    
+    const themeSwitchIconToggle = () => {
+        const themeSwitchIconNight = document.querySelector(".js-themeSwitchIconNight");
+        const themeSwitchIconDay = document.querySelector(".js-themeSwitchIconDay");
+    
+        themeSwitchIconNight.classList.toggle("navigation__themeModeIcon--off");
+        themeSwitchIconDay.classList.toggle("navigation__themeModeIcon--off");
+    };
+    
+    const nightModeToggle = () => {
+        const nightModeSwitch = document.querySelector(".js-themeModeSwitch");
+        nightModeSwitch.addEventListener("click", () => {
+            darkThemeToggle();
+            mobileMenuDarkModeToggle();
+            themeSwitchIconToggle();
+            darkIconToggle();
+            navigationDarkModeToggle();
+            tableDarkModeToggle();
+            nightModeButtonTextChanging();
+        });
+    };
+    
+    const toggleMobileMenu = () => {
+        const mobileMenu = document.querySelector(".js-mobileMenu");
+    
         mobileMenu.classList.toggle("mobileMenu--off");
+    };
+    
+    const mobileButtonAnimation = () => {
+        const topHamburgerItem = document.querySelector(".js-topHamburgerItem");
+        const middleHamburgerItem = document.querySelector(".js-middleHamburgerItem");
+        const bottomHamburgerItem = document.querySelector(".js-bottomHamburgerItem");
+    
         topHamburgerItem.classList.toggle("navigation__hamburgerItem--topEffect");
         middleHamburgerItem.classList.toggle("navigation__hamburgerItem--middleEffect");
         bottomHamburgerItem.classList.toggle("navigation__hamburgerItem--bottomEffect");
-    })
-})
+    };
+    
+    const mobileButtonOperation = () => {
+        const navHamburger = document.querySelector(".js-navHamburger");
+    
+        navHamburger.addEventListener("click", () =>{
+            toggleMobileMenu();
+            mobileButtonAnimation();
+        });
+    };
+    
+    const mobileMenuOperation = () => {
+        mobileMenuItem.forEach((m) =>{
+            m.addEventListener("click", () =>{
+                toggleMobileMenu();
+                mobileButtonAnimation();
+            });
+        });
+    };
+    
+    const init = () => {
+        mobileButtonOperation();
+        mobileMenuOperation();
+        nightModeToggle();
+    
+        welcome();
+    };
+    
+    init();
+}
