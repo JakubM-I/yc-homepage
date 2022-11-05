@@ -3,13 +3,11 @@
         console.log("Witaj internauto na mojej stronie! Jestem początkujacym frontend developerem z kilkunastoletnim doświadczeniem w ecommerce");
     };
     
-    const darkThemeToggle = () => {
-        const body = document.querySelector("body");
-        
+    const darkThemeToggle = (body) => {
         body.classList.toggle("body--nightTheme");
     };
     
-    const nightModeButtonTextChanging = () =>{
+    const nightModeButtonTextChanging = (body) =>{
         const nightModeButton =  document.querySelector(".js-themeModeButton");
     
         nightModeButton.innerText = body.classList.contains("body--nightTheme") ? "Jasny motyw" : "Ciemny motyw";
@@ -71,14 +69,16 @@
     
     const nightModeToggle = (mobileMenuItem) => {
         const nightModeSwitch = document.querySelector(".js-themeModeSwitch");
+        const body = document.querySelector("body");
+        
         nightModeSwitch.addEventListener("click", () => {
-            darkThemeToggle();
+            darkThemeToggle(body);
             mobileMenuDarkModeToggle();
             themeSwitchIconToggle();
             darkIconToggle();
             navigationDarkModeToggle(mobileMenuItem);
             tableDarkModeToggle();
-            nightModeButtonTextChanging();
+            nightModeButtonTextChanging(body);
         });
     };
     
