@@ -3,8 +3,6 @@
         console.log("Witaj internauto na mojej stronie! Jestem początkujacym frontend developerem z kilkunastoletnim doświadczeniem w ecommerce");
     };
     
-    const mobileMenuItem = document.querySelectorAll(".js-mobileMenuItem");
-
     const darkThemeToggle = () => {
         const body = document.querySelector("body");
         
@@ -22,26 +20,26 @@
         const cellHead = document.querySelectorAll(".onlineBuyer__tableCell--head");
         const colSummary = document.querySelector(".onlineBuyer__colSummary");
     
-        tableCell.forEach((c) =>{
-            c.classList.toggle("onlineBuyer__tableCell--black");
+        tableCell.forEach((cell) =>{
+            cell.classList.toggle("onlineBuyer__tableCell--black");
         })
     
-        cellHead.forEach((h) => {
-            h.classList.toggle("onlineBuyer__tableCell--headBlack");
+        cellHead.forEach((head) => {
+            head.classList.toggle("onlineBuyer__tableCell--headBlack");
         })
     
         colSummary.classList.toggle("onlineBuyer__colSummary--black");
     };
     
-    const navigationDarkModeToggle = () => {
+    const navigationDarkModeToggle = (mobileMenuItem) => {
         const navigationLink = document.querySelectorAll(".js-navigationLink");
         
-        navigationLink.forEach((l) => {
-            l.classList.toggle("navigation__link--black");
+        navigationLink.forEach((link) => {
+            link.classList.toggle("navigation__link--black");
         })
     
-        mobileMenuItem.forEach((i) => {
-            i.classList.toggle("mobileMenu__item--black");
+        mobileMenuItem.forEach((item) => {
+            item.classList.toggle("mobileMenu__item--black");
         })
     };
     
@@ -71,14 +69,14 @@
         themeSwitchIconDay.classList.toggle("navigation__themeModeIcon--off");
     };
     
-    const nightModeToggle = () => {
+    const nightModeToggle = (mobileMenuItem) => {
         const nightModeSwitch = document.querySelector(".js-themeModeSwitch");
         nightModeSwitch.addEventListener("click", () => {
             darkThemeToggle();
             mobileMenuDarkModeToggle();
             themeSwitchIconToggle();
             darkIconToggle();
-            navigationDarkModeToggle();
+            navigationDarkModeToggle(mobileMenuItem);
             tableDarkModeToggle();
             nightModeButtonTextChanging();
         });
@@ -109,7 +107,7 @@
         });
     };
     
-    const mobileMenuOperation = () => {
+    const mobileMenuOperation = (mobileMenuItem) => {
         mobileMenuItem.forEach((m) =>{
             m.addEventListener("click", () =>{
                 toggleMobileMenu();
@@ -119,9 +117,11 @@
     };
     
     const init = () => {
+        const mobileMenuItem = document.querySelectorAll(".js-mobileMenuItem");
+
         mobileButtonOperation();
-        mobileMenuOperation();
-        nightModeToggle();
+        mobileMenuOperation(mobileMenuItem);
+        nightModeToggle(mobileMenuItem);
     
         welcome();
     };
